@@ -1,0 +1,126 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "chubin",
+         Animation = "ko có j hết"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=83190276951914",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+
+
+AddButton(Tab1o, {
+     Name = "script farm hay j á",
+    Callback = function()
+
+getgenv().config = {
+
+    Setting = {
+
+        ["Team"] = "Marines",         --Pirates\Marines
+
+        ["Disabled Notify"] = false,
+
+        ["Boots FPS"] = false,
+
+        ["White Screen"] = false,
+
+        ["No Stuck Chair"] = true, 
+
+        ["Auto Rejoin"] = true,
+
+    },
+
+    ChestFarm = {
+
+        ["Start Farm Chest"] = true,
+
+        ["Stop When Have Item"] = true, 
+
+    },
+
+    Webhook = {
+
+        ["Webhook Url"] = "",
+
+        ["Send Webhook"] = true,
+
+    },
+
+}loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubAutoChest.lua"))()
+
+Fram rương 
+
+getgenv().Mode = “OneClick”
+
+getgenv().Setting = {
+
+    ["Team"] = "Marines", -- Options "Pirates", “Marines”
+
+    ["FucusOnLevel"] = true,
+
+    ["Fruits"] = {  -- setting for fruits u want
+
+        ["Primary"] = { -- if current fruit is not in this list, eat/buy
+
+            "Dragon-Dragon",
+
+            -- u can configs add mores/remove and must end with , (comma symbol)
+
+        },
+
+        ["Normal"] = { -- it just a normal fruit list
+
+            "Dragon-Dragon",
+
+            -- u can configs add mores/remove and must end with , (comma symbol)
+
+        }
+
+        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
+
+    },
+
+    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
+
+};
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+
+Kaitun
