@@ -1,0 +1,31 @@
+local GameP = game.PlaceId
+
+local function NotifyText(Text)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "N name hub - Client", -- Required
+	Text = Text, -- Required
+	Icon = "rbxassetid://122022293854293" -- Optional
+})
+end
+
+local function load(https)
+loadstring(game:HttpGet(https))()
+end
+
+NotifyText("Checking")
+
+if getgenv().nonameloaded then
+NotifyText("script is already running!")
+    return
+end
+getgenv().scriptloaded = true
+
+if GameP == 2753915549 or GameP == 4442272183 or GameP == 7449423635 then  -- Blox fruits
+NotifyText("Blox Fruits Script Loading!")
+load("https://raw.githubusercontent.com/DarkDoorsKing/Project/main/BloxFruits.lua")
+elseif GameP == 6839171747 then -- Doors Game
+NotifyText("Doors Script Loading!")
+load("https://raw.githubusercontent.com/DarkDoorsKing/Project/main/Doors.lua")
+  else -- Not Support
+NotifyText("Game Not Support " .. "[" .. GameP .. "]")
+end
